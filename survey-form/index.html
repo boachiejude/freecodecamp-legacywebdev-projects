@@ -5,8 +5,52 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Survey</title>
+		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
-		
+		<header>
+			<h1>freeCodeCamp Survey Form</h1>
+			<p>Thank you for taking the time to help us improve the platform</p>
+		</header>
+		<div class="card">
+			<form action="submit">
+				<div class="form-group">
+					<label for="name">
+						Name <br>
+						<input type="text" name="name" placeholder="Enter your name"><br>
+					</label>
+				</div>
+				<div class="form-group">
+					<label for="age">
+						Age <br>
+						<input type="number" name="age" placeholder="Enter your age"><br>
+					</label>
+				</div>
+				<div class="form-group">
+					<label for="email">
+						Email <br>
+						<input type="email" name="email" placeholder="Enter your email address"><br>
+					</label>
+				</div>
+				<div class="form-group">
+					<label for="current-role">
+						Which option best describes your current role? <br>
+						<select name="current-role" id="dropdown">
+							<option value="student">Student</option>
+							<option value="job">Full time job</option>
+							<option value="learner">Full time learner</option>
+							<option value="preferNo">Prefer not to say</option>
+							<option value="other">Other</option>
+						</select>
+					</label>
+				</div>
+				<div class="form-group">
+					Would you recommend freeCodeCamp to a friend? <br>
+					<label for="recommend">
+						
+					</label>
+				</div>
+			</form>
+		</div>
 	</body>
 </html>
