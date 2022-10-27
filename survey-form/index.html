@@ -12,33 +12,34 @@
 	</head>
 	<body>
 		<header>
-			<h1>freeCodeCamp Survey Form</h1>
-			<p><i>Thank you for taking the time to help us improve the platform</i></p>
+			<h1 id="title">freeCodeCamp Survey Form</h1>
+			<p id="description"><i>Thank you for taking the time to help us improve the platform</i></p>
 		</header>
 		<div class="card">
-			<form action="submit">
+			<form action="submit" id="survey-form">
 				<div class="form-group">
-					<label for="name">
+					<label id="name-label">
 						Name <br>
-						<input type="text" name="name" placeholder="Enter your name"><br>
+						<input reqiured type="text" id="name" placeholder="Enter your name"><br>
 					</label>
 				</div>
 				<div class="form-group">
-					<label for="age">
+					<label id="number-label">
 						Age <br>
-						<input type="number" name="age" placeholder="Enter your age"><br>
+						<input type="number" min="13" max="100" id="number" placeholder="Enter your age"><br>
 					</label>
 				</div>
 				<div class="form-group">
-					<label for="email">
+					<label id="email-label">
 						Email <br>
-						<input type="email" name="email" placeholder="Enter your email address"><br>
+						<input required type="email" id="email" placeholder="Enter your email address"><br>
 					</label>
 				</div>
 				<div class="form-group">
 					<label for="current-role">
 						Which option best describes your current role? <br>
-						<select name="current-role" id="role-dropdown">
+						<select name="current-role" id="dropdown">
+							<option value="select" disabled>Select an option</option>
 							<option value="student">Student</option>
 							<option value="job">Full time job</option>
 							<option value="learner">Full time learner</option>
@@ -50,13 +51,13 @@
 				<div class="form-group">
 					Would you recommend freeCodeCamp to a friend? <br>
 					<label>
-						<input type="radio" name="definitely" id=""> Definitely
+						<input type="radio" name="definitely" value="0"> Definitely
 					</label><br>
 					<label>
-						<input type="radio" name="maybe" id=""> Maybe
+						<input type="radio" name="maybe" value="1"> Maybe
 					</label><br>
 					<label>
-						<input type="radio" name="not-sure" id=""> Not Sure
+						<input type="radio" name="not-sure" value="2"> Not Sure
 					</label><br>
 				</div>
 				<div class="form-group">
@@ -115,7 +116,7 @@
 				</div>
 				<div class="form-group">
 					<label for="submit">
-						<input type="submit" id="submit-button" value="Submit">
+						<input type="submit" id="submit" value="Submit">
 					</label>
 				</div>
 			</form>
